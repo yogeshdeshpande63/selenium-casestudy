@@ -36,7 +36,6 @@ public class SeleniumCaseStudy {
             WebElement addToCartButton = driver.findElement(By.id("atcRedesignId_btn"));
             addToCartButton.click();
 
-            // Step 7: Wait until the cart is updated
             wait.until(ExpectedConditions.presenceOfElementLocated(By.id("cart-preview")));
 
             WebElement cartIcon = driver.findElement(By.id("gh-cart-i"));
